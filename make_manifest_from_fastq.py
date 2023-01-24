@@ -1,4 +1,5 @@
 #!/bin/bash
+read 
 ls *.L001.fastq.gz|
 while read i;
 do echo "$i";
