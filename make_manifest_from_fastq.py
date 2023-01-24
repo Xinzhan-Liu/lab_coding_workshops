@@ -1,9 +1,8 @@
 #!/bin/bash
-read 
-ls *.L001.fastq.gz|
+for i in *.L001.fastq.gz;
 while read i;
-do echo "$i";
-zcat $i | grep -c '+';
+do 
+zcat *.L001.fastq.gz | grep -c '+';
 done
 
 
